@@ -1,0 +1,81 @@
+1. Python
+2. pip
+3. path
+4. django
+
+------------------
+Instalar Python, al momento de instalar debemos marcar pip y agregar la ruta del entorno
+
+Agregar python a las variebles de entorno
+
+C:\Users\jfbec\
+C:Users\jfbec\AppData
+seleccionamos Local -> Programas -> Python
+
+luego copiamos la ruta => C:\Users\jfbec\AppData\Local\Programs\Python\Python312
+
+no dirigimos a las variables de entorno y agregamos una nueva variable y l apegamos.
+
+-----------------------
+Instalar pip
+
+python -m pip install Django==5.0.2
+
+si tenemos con instaralar Django tenemos que validar sin pip esta instalado o lo intalamos
+
+python -m ensurepip --default-pip
+
+--------------------------
+creamos nuestro primer proyecto
+django-admin startproject adso
+
+--------------------------
+¿que es Django y para que nos sirve?
+------------------------
+¿cual es el patrón de arquitectura de Django?
+-----------------------
+estructura de un proyecto Django
+----------------------
+creamos la estructura de datos en nuestro proyecto, cada vez que trabajemos en nuestra estructura de datos 
+tenemos que realizar el proceso
+python manage.py migrate
+
+podemos instalar el plugin sqltools para poder visualizar el archivo que se crea
+pero para poder verlos instale SQLite Viewer y al momento de visualizar seleccione el plugin
+
+-----------------------
+para poder iniciar el servidor local
+python manage.py runserver
+
+podemos visualizar el resultado en nla url 127.0.0.1:8000
+
+--------------------
+creamos el archivo views.py
+
+en este archivo creamos nuestras funciones para las vistas, luego agregamos las rutas en urls.py
+
+----------------
+
+rutas con parametros
+<tipo parametro:nombre parametro>
+persona/<int:edad>/
+
+-----------------
+
+plantillas
+
+en el archivo setting buscamos el arreglo TEMPLATES y agregamos una posición con el nombre del ditectorio
+
+'templates'
+
+en la carpeta templates creamos nuestros archivos html
+
+----------------------
+para poder visualizar nuestros archivos html tenemos que importar en nuetro archivo de vistas el modulo render
+
+from django.shortcuts import render
+
+luego retornamos en la funcion el archivo renderizado(requets, ruta del html, contexto o parametros)
+
+---------------------
+
