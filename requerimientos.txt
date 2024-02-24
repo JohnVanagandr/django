@@ -79,3 +79,16 @@ luego retornamos en la funcion el archivo renderizado(requets, ruta del html, co
 
 ---------------------
 
+Archivos estaticos, css, js etc
+
+la configuración se encuentra en el archivo setting.py, buscamos la variable de entorno STATIC_URL
+
+para agregar la ruta base de los archivos y poder cargarlos, agregamos una nueva variable de entorno
+
+STATICFILES_DIRS = [
+  BASE_DIR /"static",
+  #'/var/www/static',
+]
+
+--------------------
+

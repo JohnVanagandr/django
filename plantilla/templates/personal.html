@@ -9,15 +9,19 @@
   <body>
     <p>Hola {{name}} tu edad es {{age}} años</p>
     <p>Categorias que me estan gustando</p>
-    <!-- {{ categories }} -->
+    {# categories -comentario simple #} {% comment "" %} Comenatario multilinea
+    estamos recorriendo las Categorias de igual forma estamos realizando una
+    condición {% endcomment %}
     <ul>
       {% for category in categories %} {% if category == 'python' %}
       <li>
-        <b>{{ category }}</b>
+        <b>{{ category|upper }}</b>
       </li>
       {% else %}
       <li>{{ category }}</li>
       {% endif %} {% endfor %}
     </ul>
+    {# filtros #}
+    <h5>Total de categorias {{ categories|length }}</h5>
   </body>
 </html>
