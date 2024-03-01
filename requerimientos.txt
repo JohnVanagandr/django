@@ -19,14 +19,17 @@ no dirigimos a las variables de entorno y agregamos una nueva variable y l apega
 -----------------------
 Instalar pip
 
-python -m pip install Django==5.0.2
-
-si tenemos con instaralar Django tenemos que validar sin pip esta instalado o lo intalamos
+De no tener instalado pip no podemos continuar
 
 python -m ensurepip --default-pip
 
+Luego instalamos Django en nuestro computador
+
+python -m pip install Django==5.0.2
+
 --------------------------
 creamos nuestro primer proyecto
+
 django-admin startproject adso
 
 --------------------------
@@ -91,4 +94,6 @@ STATICFILES_DIRS = [
 ]
 
 --------------------
+
+extends - include
 
