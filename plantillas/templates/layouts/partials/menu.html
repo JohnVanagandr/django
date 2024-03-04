@@ -1,16 +1,13 @@
-<nav>
-  <ul>
-    <li>
-      <a href="{% url 'inicio' %}">Inicio</a>
+<nav class="menu">
+  <ul class="menu__list">
+    <li class="menu__item">
+      <a href="{% url 'inicio' %}" class="menu__link">Inicio</a>
     </li>
-    <li>
-      <a href="{% url 'nosotros' %}">Nosotros</a>
+    <li class="menu__item">
+      <a href="{% url 'portafolio' %}" class="menu__link">Portafolio</a>
     </li>
-    <li>
-      <a href="{% url 'servicios' %}">Servicios</a>
-    </li>
-    <li>
-      <a href="{% url 'contacto' %}">Contáctanos</a>
+    <li class="menu__item">
+      <a href="{% url 'contacto' %}" class="menu__link">Contáctanos</a>
     </li>
   </ul>
 </nav>

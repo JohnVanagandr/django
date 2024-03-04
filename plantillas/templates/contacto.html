@@ -1,7 +1,26 @@
 {% extends "./layouts/base.html" %} 
+{% load static %}
+
+{% block title %}
+Contáctenos
+{% endblock  %}
+
 {% block content %} 
-Lorem ipsum dolor sit,
-amet consectetur adipisicing elit. Qui illum a nam explicabo, voluptatibus in
-eius animi repudiandae nobis tenetur aperiam eaque deleniti nihil quia culpa
-labore. Ex, officiis animi. 
+
+    <section class="section section--contact">
+      <div class="container contact">
+        <form class="contact__form">
+          <h2 class="contact__title">Enviame un mensaje</h2>
+          <input type="text" placeholder="Ingresa tu nombre:" class="contact__input">
+          <input type="text" placeholder="Ingresa tu teléfomo:" class="contact__input">
+          <input type="email" placeholder="Ingresa tu email:" class="contact__input">
+          <textarea placeholder="Mensaje..." class="contact__input contact__input--area"></textarea>
+          <button type="submit" class="contact__cta">Enviar ahora</button>
+        </form>
+        <figure class="contact__picture">
+            <img src="{% static 'img/form.png' %}" class="contact__img">
+        </figure>
+      </div>
+    </section>
+
 {% endblock %}

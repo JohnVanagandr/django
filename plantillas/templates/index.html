@@ -1,2 +1,37 @@
-{% extends "./layouts/base.html" %} {% block content%} contenido del bloque
+{% extends "./layouts/base.html" %} 
+{% load static %}
+
+{% block title %}
+Portada
+{% endblock  %}
+
+{% block content%}
+
+<section class="section">
+  <div class="container profile">
+    <figure class="profile__picture">
+      <img src="{% static 'img/profile.png' %}" alt="Foto personal" class="profile__img">
+    </figure>
+    <div class="profile__text">
+      <h1 class="profile__title">
+        John Becerra
+      </h1>
+      <ul class="list">
+        <li class="list__item list__item--border">
+          <p class="paragraph"><b>Celular: </b>3160410637</p>
+        </li>
+        <li class="list__item list__item--border">
+          <p class="paragraph"><b>Corre electrónico: </b>jfbecerra@sena.edu.co</p>
+        </li>
+        <li class="list__item list__item--border">
+          <p class="paragraph"><b>Edad: </b>38 años</p>
+        </li>
+        <li class="list__item list__item--border">
+          <p class="paragraph"><b>Profesión: </b>Instructor SENA</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 {%endblock %}
