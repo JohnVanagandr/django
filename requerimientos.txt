@@ -97,3 +97,45 @@ STATICFILES_DIRS = [
 
 extends - include
 
+-------------------
+
+Modularización
+
+python manage.py startapp comentarios
+
+agregamos el modulo a la configuración en el arreglo a aplicaciones
+
+INSTALLED_APPA =[
+	'comentarios'
+]
+
+validamos que el modulo se agrege correctamente con la sentencia
+
+python manage.py check comentarios
+
+---------------------
+
+Modelo de datos
+
+Programamos o configuramos las clase o modelo, esto se crear dentro de muestro modulo en
+la clase models.py
+
+Luego creamos la migración 
+python manage.py makemigrations 
+
+Para finalizar corriendo nuevamente las migraciones
+python manage.py migrate
+
+
+--------------------
+
+Delegación de rutas
+
+creamos las rutas de modulo en el mismo modulo
+urls.py
+
+creamos las vistas en el modulo
+
+Nota: los modelos se crean en singular y con la primera letra en mayuscula
+--------------------
+
