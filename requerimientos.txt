@@ -139,3 +139,21 @@ creamos las vistas en el modulo
 Nota: los modelos se crean en singular y con la primera letra en mayuscula
 --------------------
 
+seeding y paquetes
+
+https://github.com/Brobin/django-seed
+
+python -m pip install django-seed
+
+python manage.py seed post --number=50
+
+python -m pip install psycopg2-binary
+
+--------------------
+
+Consultas
+
+https://docs.djangoproject.com/en/5.0/topics/db/queries/
+
+---------------------
+
