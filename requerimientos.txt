@@ -157,3 +157,58 @@ https://docs.djangoproject.com/en/5.0/topics/db/queries/
 
 ---------------------
 
+relaciones
+https://docs.djangoproject.com/es/5.0/topics/db/examples/
+
+django-admin startproject relaciones
+
+cd relaciones
+
+uno a uno
+
+python manage.py startapp onetoone
+
+python manage.py check onetoone
+
+python manage.py migrate
+
+//Programamos los modelos
+
+python manage.py makemigrations
+python manage.py migrate
+
+//programamos las urls y las vitas
+//guardarmos los datos en las vistas
+
+uno a muchos y muchos a uno
+
+python manage.py startapp manytoone
+
+python manage.py check manytoone
+
+//Programamos los modelos
+
+python manage.py makemigrations
+python manage.py migrate
+
+relaciones inversas 
+
+modelo.modelo_relacional_set
+
+muchos a muchos
+
+python manage.py startapp manytomany
+
+python manage.py check manytomany
+
+//Programamos los modelos
+
+python manage.py makemigrations
+python manage.py migrate
+
+
+
+
+
+
+

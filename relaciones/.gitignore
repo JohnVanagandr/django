@@ -1,0 +1,3 @@
+manytomany/__pycache__/*
+manytoone/__pycache__/*
+onetoone/__pycache__/*
