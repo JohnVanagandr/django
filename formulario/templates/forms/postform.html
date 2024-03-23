@@ -1,0 +1,9 @@
+<h3>Formulario de contacto</h3>
+<form action="{% url 'postgoal' %}" method="post">
+  {% csrf_token %}
+  <label for="firs_name">Nombre</label>
+  <input type="text" name="firs_name">
+  <label for="last_name">Apellidos</label>
+  <input type="text" name="last_name">
+  <button type="submit">Enviar</button>
+</form>
